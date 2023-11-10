@@ -4,11 +4,11 @@ import os
 import subprocess
 from dotenv import load_dotenv
 
+# Load environment variables
 load_dotenv()
 
-file_path = os.getenv('FILE_PATH', 'file.txt')
-
 # Set the file path and name
+file_path = os.getenv('FILE_PATH', 'file.txt')
 
 # Create or update the file with the current date
 current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
